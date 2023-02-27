@@ -13,48 +13,56 @@
 </head>
 
 <body>
-    <nav>
-        <div>
-            <img src="./assets/img/Logo_Amazing_Events.png" alt="logo" class="logo">
-        </div>
-        
-        <div class="derecha">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./upcoming.html">Upcoming Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./past.html">Past Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./stats.html">Stats</a>
-                </li>
+    <nav class="navbar navbar-expand-lg head-color">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="./assets/img/Logo_Amazing_Events.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="./index.html" class="btn btn-outline-success mx-2" role="button">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./upcoming.html" class="btn btn-outline-success mx-2" role="button">Uncoming Events</a>
+              </li>
+              <li class="nav-item">
+                <a  href="./past.html" class="btn btn-outline-success mx-2" role="button">Past Events</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contact.html" class="btn btn-outline-success mx-2" role="button">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="./details.html" class="btn btn-outline-success mx-2" role="button">Details</a>
+              </li>
+              <li class="nav-item">
+                <a href="./stats.html" class="btn btn-outline-success mx-2" role="button">Stats</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3 p-2">
-                    <div class="card details">
-                        <img src="./assets/img/Cinema.jpg" class="card-img-top" alt="cinema">
-                       
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 p-2">
-                    <div class="card details">
+                <div class="col-sm-12 col-md-6 col-lg-3 p-2 details">
+                  <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/img/Cinema.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Titulo</h5>
-                            <p class="card-text">Texto Desciptivo</p>
-                            <a href="./index.html" class="btn btn-primary">Volver</a>
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
             </div>
         </div>
