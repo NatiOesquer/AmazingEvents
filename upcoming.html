@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Events</title>
+    <title>Upcoming Events</title>
     <link rel="shortcut icon" href="./assets/img/Logo_Amazing_Events.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,7 +24,7 @@
             <a href="./index.html" class="btn btn-outline-success mx-2" role="button">Home</a>
           </li>
           <li class="nav-item">
-            <a href="./upcoming.html" class="btn btn-outline-success mx-2" role="button">Uncoming Events</a>
+            <a href="./upcoming.html" class="btn btn-outline-success mx-2" role="button">Upcoming Events</a>
           </li>
           <li class="nav-item">
             <a  href="./past.html" class="btn btn-outline-success mx-2" role="button">Past Events</a>
@@ -52,41 +52,25 @@
         </div>
   
       </div>
-        <div class="categoria">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                <label class="form-check-label" for="inlineCheckbox3">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                <label class="form-check-label" for="inlineCheckbox3">Category</label>
-              </div>
-              <div>
-                <label>
-                    <input type="text" name="buscar" placeholder="buscar">                    
-                </label>
-                <label>
-                    <input type="submit" value="🔍">
-                </label>
-              </div>
-        </div>    
-        <div class="container">
-          <div class="row cardEvent" id="cardEvent">
-
-          </div>
-
+      <div id="submit-categoria">
+        <div class="categoria mb-2 mb-lg-0" id="categoria">
+  
+        </div>
+        <div class="form-check form-check-inline" >
+          <form class="d-flex" id="buscar">
+            <input class="form-control me-2" type="search" name="buscar" placeholder="Search" id="search" aria-label="Search">
+            <input type="submit" value="🔍" id="boton">
+          </form>
+  
+        </div>
+      </div>
+  
+  
+  
+      <div class="container">
+        <div class="row cardEvent" id="ContenedorCard">  
+          
+        </div>
       </div>
         
     </main>

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgb(249, 245, 241);
 }
 main{
     min-height: 90vh;
@@ -26,9 +26,6 @@ main{
     border-color: black;
 }
 
-li.nav-item{
-    background-color: antiquewhite
-}
 li.nav-item a{
    background-color: rgb(251, 185, 238);
 }
@@ -38,14 +35,30 @@ li.nav-item a:hover{
 .categoria {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+#submit-categoria{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.buscar{
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.me-2 {
+    margin-top: 15px;
+    margin-right: .5rem!important;
+}
+#boton{
+    margin-top: 15px;
 }
 .container{
     padding: 10px;    
 }
 .carrusel{    
-    background-color: blueviolet;
+    background-color: rgb(196, 185, 205);
     height: 130px;
     margin-left: 0;
     flex-wrap: wrap;
@@ -91,7 +104,7 @@ li.nav-item a:hover{
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: blueviolet;
+    background-color: rgb(196, 185, 205);
     color: black;
     align-items:center;
     margin-top: 50px;
@@ -124,6 +137,7 @@ table{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 th{
     font-size: x-large;
@@ -145,22 +159,25 @@ td{
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    margin: 20px;
     
 }
 .formulario label{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;    
+    justify-content: center;  
+    width: 100%; 
+    
 }
 .formulario input{
-    width: 400px;
+    width: 100%;
 }
 .formulario span{
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(59, 43, 74);
+    margin-top: 20px;
 }
 .boton{
     margin-top: 20px;
@@ -170,11 +187,11 @@ td{
     
 }
 .boton button{
-    margin: 5px;
-    padding: 10px;
-    background-color: rgb(7, 7, 7);
-    color: rgb(193, 142, 240);
+    width: 100%;
+    background-color: rgb(196, 185, 205);
+    color: rgb(59, 43, 74);
     font-weight: bolder;
+    border: none;
  
 }
 .details{
@@ -189,4 +206,58 @@ td{
 }
 .cardEvent .card{
     height: 100%;
+}
+.btn-primary{
+    background-color: rgb(168, 121, 181)!important;
+    color: rgb(249, 248, 249)!important;
+}
+
+.respuesta{
+    color:rgb(59, 43, 74); 
+    margin-top: 35px;
+}
+.container.detalleCard{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    
+}
+.img-fluid{
+    object-fit: cover!important;
+    max-width: 100%;
+    object-fit: cover!important;
+    height: 25rem!important;
+    width: 40rem!important;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+    
+}
+
+#image {
+
+    FONT-WEIGHT: 100 !important;
+    flex: 0 0 auto !important;
+    width: 50% !important;
+}
+
+.card .card-img-top {
+    width: 100%;
+    height: 130px;
+    object-fit: cover !important;
+
+
+}
+.estilotarjeta{
+    padding: 0 0!important;
+    margin: 0 0!important;
+    display: inline-block;
 }

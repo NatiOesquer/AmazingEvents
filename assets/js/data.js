@@ -184,14 +184,24 @@ let data = {
           <div class="d-flex justify-content-between align-items-center">
             <small class="text-muted">Price: $${event.price}</small>
             <div class="btn-group">
-              <button type="button" class="btn btn-outline-secondary border-success">Ver Mas...</button>
+            <a href="./details.html?id=${event._id}" class="btn btn-primary btn-sm">Ver Mas..</a>
             </div>
           </div>
-        </div>
+        </div> 
     </div>
   </div>`;
   return cards;
   };
-  let currentDate = new Date(data.currentDate);
-  console.log(currentDate);
   
+ 
+
+
+
+function createcheckbox(category){
+  return `<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="check${category}" value="${category}" name="categoria">
+  <label class="form-check-label" for="check${category}">${category}</label>
+</div> `;
+ 
+}
+
