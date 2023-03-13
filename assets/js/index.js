@@ -90,7 +90,11 @@ function buscando(categorias,ingresoTexto){
   };
   console.log(Resultado);
 
-  }else if(categorias.length == 0 && buscandoCard.length == 0){
+}else if(categorias.length == 0 && ingresoTexto !== ""){
+  data.events.filter(event => event.name.toLowerCase().includes(ingresoTexto)|| event.description.toLowerCase().includes(ingresoTexto)).forEach(event =>{
+    Resultado += createCard(event)
+  });
+}else if(categorias.length == 0 && ingresoTexto == ""){
     data.events.forEach(event =>{
       Resultado += createCard(event)
     });

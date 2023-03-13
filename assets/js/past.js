@@ -85,6 +85,12 @@ function buscando(categorias,ingresoTexto){
             Resultado += `<div class="respuesta"><h2>No se encontraron resultados, por favor intente nuevamente</h2></div>;`
         };
         console.log(Resultado);
+
+    }else if(categorias.length == 0 && ingresoTexto !== ""){
+        data.events.filter(event => event.name.toLowerCase().includes(ingresoTexto)|| event.description.toLowerCase().includes(ingresoTexto)).forEach(event =>{
+          Resultado += createCard(event)
+        });
+        
     }else if(categorias.length == 0 && ingresoTexto == ""){
         listpast.forEach(event => {
             Resultado += createCard(event)
