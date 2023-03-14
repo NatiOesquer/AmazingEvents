@@ -229,9 +229,6 @@ td{
 .img-fluid{
     object-fit: cover!important;
     max-width: 100%;
-    object-fit: cover!important;
-    height: 25rem!important;
-    width: 40rem!important;
 }
 
 .card-body{
