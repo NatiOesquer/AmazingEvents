@@ -1,3 +1,6 @@
+let data = localStorage.getItem("data")
+data = JSON.parse(data)
+
 console.log([document]);
 const queryString = location.search;
 console.log(queryString);

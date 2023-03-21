@@ -1,3 +1,6 @@
+let data = localStorage.getItem("data")
+data = JSON.parse(data)
+
 let categorias = [];
 data.events.forEach(evento =>{
   if(!categorias.includes(evento.category)){

@@ -1,3 +1,6 @@
+let data = localStorage.getItem("data")
+data = JSON.parse(data)
+
 //task2
 let categorias = [];
 data.events.forEach(evento =>{
